@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.tien21.es/estaticos/images/Tien21/favicon-32.webp">
   <meta name="description" content="proyecto 1, landing page tienda online">
   <meta name="keywords" content="HTML, CSS, Proyecto 1, landing page, tienda online">
   <meta name="author" content="David Camuñez">
@@ -11,9 +11,605 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Proyecto 1</title>
 </head>
-
 <body>
-
+  <header>
+    <nav class="supnav">
+      <div class="topbar">
+        <div class="logo">
+          <h1>
+            <div>
+              <a href="/">
+                <img class="logo1" src="assets/logo.webp" alt="logo">
+              </a>
+            </div>
+          </h1>
+        </div>
+        <div class="code">
+          <img src="assets/ubicacion.svg" alt="ubicacion">
+          <a class="textcp" href="https://www.tien21.es/ubicacion.html" alt="ubicacion">Codigo postal de envio:
+            41009</a>
+        </div>
+        <div class="buscador">
+          <form class="form-search" action="search" name="search">
+            <input type="text" name="search" id="buscador" placeholder="¿Que estas buscando?">
+            <button class="button" type="submit">
+              <img class="search" src="assets/lupa-t.svg" alt="buscador">
+            </button>
+          </form>
+        </div>
+        <div class="flex-bar">
+          <div class="micuenta">
+            <a href="https://www.tien21.es/registroCliente/login">
+              <img src="assets/user.svg" alt="usuario">
+            </a>
+            <a class="textmicuenta" href="https://www.tien21.es/registroCliente/login" alt="login">Mi Cuenta</a>
+          </div>
+          <div class="seguimiento">
+            <a href="https://www.tien21.es/seguimientopedido.html">
+              <img src="assets/track.svg" alt="track">
+            </a>
+            <a class="textseguimiento" href="https://www.tien21.es/seguimientopedido.html" alt="login">Seguir Pedido</a>
+          </div>
+          <div class="carrito">
+            <a href="https://www.tien21.es/order/resumen/">
+              <img src="assets/cart.svg" alt="cart">
+            </a>
+            <a class="textcart" href="https://www.tien21.es/order/resumen/" alt="login">Carrito</a>
+          </div>
+        </div>
+      </div>
+      <div class="secondbar">
+        <div class="menu-white">
+          <a class="btn">
+            <img src="assets/menu-white.svg" alt="menu-white">
+            <span>VER PRODUCTOS</span>
+          </a>
+        </div>
+        <ul class="list">
+          <li><a class="color-list" href="https://www.tien21.es/ventajas-comprar-tien21.html">ENTREGA EN 24H</a></li>
+          <li><a class="color-list" href="https://www.tien21.es/entrega-basica-a-domicilio.html">SERVICIOS</a></li>
+          <li><a class="color-list" href="https://www.tien21.es/contacto.html">CONTACTO</a></li>
+          <li><a class="color-list" href="https://www.tien21.es/tiendas/localizador?customSearch=41009">VER TIENDAS</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="twoelement">
+      <div class="imgleft">
+        <img class="navidad" src="assets/feliz-navidad.webp" alt="feliz navidad">
+      </div>
+      <div class="imgright">
+        <img class="aeg" src="assets/aeg.webp" alt="AEG">
+      </div>
+    </section>
+    <section id="dondeestamos">
+      <div class="tsevilla">
+        <img class="firstimage" src="assets/tienda1.jpg" alt="Tienda Sevilla">
+      </div>
+      <div class="infosev">
+        <div class="line1">
+          <p class="title">
+            <strong>VISITA TU TIENDA MAS CERCANA</strong>
+          </p>
+          <p id="namestore">Tien21 Hnos. Angulo</p>
+        </div>
+        <div class="line2">
+          <p class="infoaddress">
+            <span id="address">Turia, 1 | 41900 Camas</span>
+            <a id="phone" href="tel:954390874">954390874</a>
+          </p>
+          <button type="button" id="boton">Como llegar</button>
+        </div>
+      </div>
+    </section>
+    <section id="popular">
+      <div>
+        <h2>LOS MÁS POPULARES</h2>
+      </div>
+      <div class="box">
+        <article class="box-art">
+          <a class="flex-cont" href="https://www.tien21.es/bosch-kgn39viea-aplusplus.html">
+            <div class="imagen">
+              <img class="electro" src="assets/frigo1.webp" alt="frigo1">
+            </div>
+            <h3>Bosch KGN39VIEA Acero Inox</h3>
+            <div class="atributos">
+              <p>Frigorífico combi
+                de Clasificación Energética E</p>
+              <p>
+                Sistema No Frost
+              </p>
+              <p>
+                Alto (mm)
+                : 2030
+              </p>
+            </div>
+            <div class="rating">
+              <div class="stars">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star_half.svg" alt="half-star">
+              </div>
+              <div class="ventas">
+                <p>4.6(193)</p>
+              </div>
+            </div>
+            <div class="bloquePrecio">
+              <p class="precioProducto">769 €</p>
+            </div>
+            <span class="finance" title="finaciacion">
+              FINÁNCIALO
+            </span>
+            <div class="plazo">
+              <p>Consulta tu plazo de envío</p>
+            </div>
+          </a>
+        </article>
+        <article class="box-art">
+          <a class="flex-cont" href="https://www.tien21.es/hisense-rb390n4ccd.html">
+            <div class="imagen">
+              <img class="electro" src="assets/frigo2.webp" alt="frigo2">
+            </div>
+            <h3>Hisense RB390N4CCD</h3>
+            <div class="atributos">
+              <p>Frigorífico combi
+                de Clasificación Energética D</p>
+              <p>
+                Sistema No Frost
+              </p>
+              <p>
+                Alto (mm)
+                : 1860
+              </p>
+            </div>
+            <div class="rating">
+              <div class="stars">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star.svg" alt="star">
+              </div>
+              <div class="ventas">
+                <p>5.0(1)</p>
+              </div>
+            </div>
+            <div class="bloquePrecio">
+              <p class="precioProducto">546 €</p>
+            </div>
+            <span class="finance" title="finaciacion">
+              FINÁNCIALO
+            </span>
+            <div class="plazo">
+              <p>Consulta tu plazo de envío</p>
+            </div>
+          </a>
+        </article>
+        <article class="box-art">
+          <a class="flex-cont" href="https://www.tien21.es/candy-roeh8a3tcex-s.html">
+            <div class="imagen">
+              <img class="electro" src="assets/seca.webp" alt="seca">
+            </div>
+            <h3>Candy ROEH8A3TCEX-S</h3>
+            <div class="atributos">
+              <p>Secadora de Bomba de Calor de Clasificación Energética- A+++</p>
+              <p>Capacidad carga (Kg): 8</p>
+              <p>Color: Blanco
+              </p>
+            </div>
+            <div class="rating">
+              <div class="stars">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star_half.svg" alt="half-star">
+              </div>
+              <div class="ventas">
+                <p>4.0(13)</p>
+              </div>
+            </div>
+            <div class="bloquePrecio">
+              <p class="precioProducto">439 €</p>
+            </div>
+            <span class="finance" title="finaciacion">
+              FINÁNCIALO
+            </span>
+            <div class="plazo">
+              <p>Consulta tu plazo de envío</p>
+            </div>
+          </a>
+        </article>
+        <article class="box-art">
+          <a class="flex-cont" href="https://www.tien21.es/hisense-40a4k.html">
+            <div class="imagen">
+              <img class="electro" src="assets/tele.webp" alt="tele1">
+            </div>
+            <h3>Hisense 40A4K</h3>
+            <div class="atributos">
+              <p>Televisor de Resolución Full HD</p>
+              <p>Tamaño pantalla(cm): 100</p>
+              <p>40: Pulgadas</p>
+            </div>
+            <div class="rating">
+              <div class="stars">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star.svg" alt="star">
+              </div>
+              <div class="ventas">
+                <p>5,0(2)</p>
+              </div>
+            </div>
+            <div class="bloquePrecio">
+              <p class="precioProducto">265 €</p>
+            </div>
+            <span class="finance" title="finaciacion">
+              FINÁNCIALO
+            </span>
+            <div class="plazo">
+              <p>Consulta tu plazo de envío</p>
+            </div>
+          </a>
+        </article>
+        <article class="box-art">
+          <a class="flex-cont" href="https://www.tien21.es/bosch-sms4emw02e.html">
+            <div class="imagen">
+              <img class="electro" src="assets/lavava.webp" alt="lavava1">
+            </div>
+            <h3>Bosch SMS4EMW02E</h3>
+            <div class="atributos">
+              <p>Lavavajillas de Clasificación Energética C</p>
+              <p>Capacidad (servicios): 14</p>
+              <p>Tipo: Libre instalación</p>
+            </div>
+            <div class="rating">
+              <div class="stars">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star_half.svg" alt="half-star">
+              </div>
+              <div class="ventas">
+                <p>4.8(102)</p>
+              </div>
+            </div>
+            <div class="bloquePrecio">
+              <p class="precioProducto">555 €</p>
+            </div>
+            <span class="finance" title="finaciacion">
+              FINÁNCIALO
+            </span>
+            <div class="plazo">
+              <p>Consulta tu plazo de envío</p>
+            </div>
+          </a>
+        </article>
+        <article class="box-art">
+          <a class="flex-cont" href="https://www.tien21.es/bosch-wal28ph1es.html">
+            <div class="imagen">
+              <img class="electro" src="assets/lava.webp" alt="lava1">
+            </div>
+            <h3>Bosch WAL28PH1ES</h3>
+            <div class="atributos">
+              <p>Lavadora carga frontalde Clasificación Energética A
+              <p>Capacidad carga (Kg): 10</p>
+              <p>Revoluciones por minuto: 1400</p>
+            </div>
+            <div class="rating">
+              <div class="stars">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star.svg" alt="star">
+              </div>
+              <div class="ventas">
+                <p>4.9(57)</p>
+              </div>
+            </div>
+            <div class="bloquePrecio">
+              <p class="precioProducto">555 €</p>
+            </div>
+            <span class="finance" title="finaciacion">
+              FINÁNCIALO
+            </span>
+            <div class="plazo">
+              <p>Consulta tu plazo de envío</p>
+            </div>
+          </a>
+        </article>
+        <article class="box-art">
+          <a class="flex-cont" href="https://www.tien21.es/samsung-ue24n4305aexxc.html">
+            <div class="imagen">
+              <img class="electro" src="assets/tele1.webp" alt="tele2">
+            </div>
+            <h3>Samsung UE24N4305AEXXC</h3>
+            <div class="atributos">
+              <p>Televisor de Resolución HD Ready
+              <p>Tamaño pantalla(cm): 59</p>
+              <p>24: Pulgadas</p>
+            </div>
+            <div class="rating">
+              <div class="stars">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star.svg" alt="star">
+              </div>
+              <div class="ventas">
+                <p>4.2(4)</p </p>
+              </div>
+            </div>
+            <div class="bloquePrecio">
+              <p class="precioProducto">175 €</p>
+            </div>
+            <span class="finance" title="finaciacion">
+              FINÁNCIALO
+            </span>
+            <div class="plazo">
+              <p>Consulta tu plazo de envío</p>
+            </div>
+          </a>
+        </article>
+        <article class="box-art">
+          <a class="flex-cont" href="https://www.tien21.es/aeg-ffb64617zm.html">
+            <div class="imagen">
+              <img class="electro" src="assets/lavava1.webp" alt="lavava2">
+            </div>
+            <h3>AEG FFB64617ZM</h3>
+            <div class="atributos">
+              <p>Lavavajillas de Clasificación Energética C
+              <p>Capacidad (servicios): 13</p>
+              <p>Tipo: Libre instalación</p>
+            </div>
+            <div class="rating">
+              <div class="stars">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star.svg" alt="star">
+              </div>
+              <div class="ventas">
+                <p>3.2(6)</p>
+              </div>
+            </div>
+            <div class="bloquePrecio">
+              <p class="precioProducto">599 €</p>
+            </div>
+            <span class="finance" title="finaciacion">
+              FINÁNCIALO
+            </span>
+            <div class="plazo">
+              <p>Consulta tu plazo de envío</p>
+            </div>
+          </a>
+        </article>
+        <article class="box-art">
+          <a class="flex-cont" href="https://www.tien21.es/beko-wra7615xw.html">
+            <div class="imagen">
+              <img class="electro" src="assets/lava2.webp" alt="lava2">
+            </div>
+            <h3>Beko WRA7615XW</h3>
+            <div class="atributos">
+              <p>Lavadora carga frontal de Clasificación Energética A</p>
+              <p>Capacidad carga (Kg): 7</p>
+              <p>Revoluciones por minuto: 1200</p>
+            </div>
+            <div class="rating">
+              <div class="stars">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star.svg" alt="star">
+              </div>
+              <div class="ventas">
+                <p>4.1(44)</p>
+              </div>
+            </div>
+            <div class="bloquePrecio">
+              <p class="precioProducto">325 €</p>
+            </div>
+            <span class="finance" title="finaciacion">
+              FINÁNCIALO
+            </span>
+            <div class="plazo">
+              <p>Consulta tu plazo de envío</p>
+            </div>
+          </a>
+        </article>
+        <article class="box-art">
+          <a class="flex-cont" href="https://www.tien21.es/teka-nfl-342-wh-blanco-aplusplus.html">
+            <div class="imagen">
+              <img class="electro" src="assets/frigo3.webp" alt="frigo3">
+            </div>
+            <h3>Teka NFL 342 CWH BLANCO</h3>
+            <div class="atributos">
+              <p>Frigorífico combi
+                de Clasificación Energética E</p>
+              <p>
+                Sistema No Frost
+              </p>
+              <p>
+                Alto (mm)
+                : 1880
+              </p>
+            </div>
+            <div class="rating">
+              <div class="stars">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star.svg" alt="star">
+              </div>
+              <div class="ventas">
+                <p>3.3(18)</p>
+              </div>
+            </div>
+            <div class="bloquePrecio">
+              <p class="precioProducto">465 €</p>
+            </div>
+            <span class="finance" title="finaciacion">
+              FINÁNCIALO
+            </span>
+            <div class="plazo">
+              <p>Consulta tu plazo de envío</p>
+            </div>
+          </a>
+        </article>
+        <article class="box-art">
+          <a class="flex-cont" href="https://www.tien21.es/bosch-wtn85201es.html">
+            <div class="imagen">
+              <img class="electro" src="assets/seca3.webp" alt="seca2">
+            </div>
+            <h3>Bosch WTN85201ES</h3>
+            <div class="atributos">
+              <p>Secadora de Condesación de Clasificación Energética- B</p>
+              <p>Capacidad carga (Kg): 7</p>
+              <p>Color: Blanco</p>
+            </div>
+            <div class="rating">
+              <div class="stars">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star.svg" alt="star">
+                <img src="assets/star_half.svg" alt="half-star">
+              </div>
+              <div class="ventas">
+                <p>4.8(73)</p>
+              </div>
+            </div>
+            <div class="bloquePrecio">
+              <p class="precioProducto">509 €</p>
+            </div>
+            <span class="finance" title="finaciacion">
+              FINÁNCIALO
+            </span>
+            <div class="plazo">
+              <p>Consulta tu plazo de envío</p>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+    <section id="fila">
+      <div class="category-content">
+        <ul class="category">
+          <li>
+            <a href="https://www.tien21.es/imagen/tv.html">
+              <img src="assets/tele1.svg" alt="cat-tele">
+              <h3 class="title-file ta">Televisores</h3>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.tien21.es/grandes-electrodomesticos/frigorificos.html">
+              <img src="assets/frigo2.svg" alt="cat-frigo">
+              <h3 class="title-file">Frigorificos</h3>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.tien21.es/grandes-electrodomesticos/lavadoras.html">
+              <img src="assets/lavadora3.svg" alt="cat-lavadoras">
+              <h3 class="title-file">Lavadoras</h3>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.tien21.es/climatizacion-hogar/frio.html">
+              <img src="assets/aire4.svg" alt="cat-aire">
+              <h3 class="title-file ta">Aire Acondicionado</h3>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.tien21.es/grandes-electrodomesticos/lavavajillas.html">
+              <img src="assets/lavavajillas5.svg" alt="cat-lavavajillas">
+              <h3 class="title-file">Lavavajillas</h3>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.tien21.es/grandes-electrodomesticos/hornos.html">
+              <img src="assets/hornos6.svg" alt="cat-hornos">
+              <h3 class="title-file">Hornos</h3>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.tien21.es/grandes-electrodomesticos/placas.html">
+              <img src="assets/placas7.svg" alt="cat-placas">
+              <h3 class="title-file">Placas</h3>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.tien21.es/telefonia-electronica/smartphone.html">
+              <img src="assets/telefonia8.svg" alt="cat-movil">
+              <h3 class="title-file">Smartphone</h3>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.tien21.es/telefonia-electronica/smartwatches.html">
+              <img src="assets/smartwatche9.svg" alt="cat-Swatch">
+              <h3 class="title-file">Smartwatches</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="foot">
+      <div class="uno">
+        <img src="assets/logo.webp" alt="logo">
+        <p>Elige fácil, compra bien</p>
+        <div>
+          <a href="https://www.tien21.es/tiendas/">Tiendas Tien21</a>
+          <a href="https://www.tien21.es/sobre-tien21.html">Conoce Tien21</a>
+          <a href="https://www.tien21.es/promociones.html">Promociones</a>
+          <a href="https://www.tien21.es/financiacion.html">Financiación</a>
+          <a href="https://www.tien21.es/extension-garantia.html">Extensión de garantía</a>
+        </div>
+      </div>
+      <div class="dos">
+        <div class="atencion">
+          <p>ATENCIÓN AL CLIENTE</p>
+          <a href="https://www.tien21.es/faqs/">Contacto / Preguntas frecuentes</a>
+          <a href="https://www.tien21.es/entrega-basica-a-domicilio.html">servicios de Entrega y Recogida</a>
+        </div>
+        <div class="enlaces">
+          <p>ENLACES DE INTERÉS</p>
+          <a href="https://ec.europa.eu/consumers/odr/main/?event=main.adr.show2&lng=ES">Comisión Europea – Organismos
+            de resolución de litigios</a>
+          <a href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=ES">Comisión Europea –
+            Presente una reclamación</a>
+          <a href="https://www.tien21.es/blog/">Blog</a>
+          <a href="https://www.tien21.es/marcas-electrodomesticos.html">Marcas de electrodomésticos</a>
+          <a href="https://www.tien21.es/navidad.html">Regalos Navideños 2023</a>
+          <a href="https://www.tien21.es/black-friday.html">Black Friday</a>
+        </div>
+      </div>
+      <div class="tres">
+        <div>
+          <label for=""></label>
+          <input type="email" name="" id="">
+          <button type="submit">ENVIAR</button>
+          <p></p>
+          <div>
+            <input type="checkbox">
+            <span></span>
+            <p class="condiciones">He leído y acepto la;
+              <a href=""></a>
+              política de privacidad
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">Tien21.es - Copyright 2023 Prohibida la reproducción total o parcial del contenido aparecido en
+      este sitio web,
+      sin el expreso consentimiento del propietario</p>
+  </footer>
 </body>
-
 </html>
