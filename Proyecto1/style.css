@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Nosifer&family=Open+Sans:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+}
 ol,ul{
   list-style: none;
 }
 a{
   text-decoration: none;
 }
+
 :root{
   /* text */
   --dci-text-xs: 12px;
@@ -17,6 +20,7 @@ a{
   --dci-text-m:16px;
   --dci-text-l:22px;
   --dci-text-xl:30px;
+
   /* colors */
   --dci-darckblue: #0060a7;
   --dci-blue: #007bff;
@@ -41,30 +45,31 @@ a{
   --dci-danger: #dc3545;
   --dci-light: #f8f9fa;
   --dci-dark: #343a40;
+
     /* brackpoint @media */
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
     
     /* paddings */
-  --dci-padding-s: 5px;
-  --dci-padding-m: 10px;
-  --dci-padding-l: 15px;
-  --dci-padding-xl: 20px;
+    --dci-padding-s: 5px;
+    --dci-padding-m: 10px;
+    --dci-padding-l: 15px;
+    --dci-padding-xl: 20px;
 
     /* margins */
-  --dci-margin-s: 10px;
-  --dci-margin-m: 20px;
-  --dci-margin-l: 30px;
-  --dci-margin-xl: 50px;
+    --dci-margin-s: 10px;
+    --dci-margin-m: 20px;
+    --dci-margin-l: 30px;
+    --dci-margin-xl: 50px;
 
     /* border radius */
-  --dci-border-radius-s: 5px;
-  --dci-border-radius-m: 8px;
-  --dci-border-radius-l: 10px;
-  --dci-border-radius-xl: 12px;
+    --dci-border-radius-s: 5px;
+    --dci-border-radius-m: 8px;
+    --dci-border-radius-l: 10px;
+    --dci-border-radius-xl: 12px;
 }
 body{
   height: 100svh;
@@ -74,6 +79,7 @@ body{
 }
 main{
   background-color: #eff0f4;
+
 }
 .supnav{
   display: flex;
@@ -84,10 +90,12 @@ main{
 }
 .topbar{
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   align-items: center;
   margin-top: 5px;
 }
+
 .logo{
   margin: 0px 10px -15px 5px;
   width: 150px;
@@ -108,6 +116,7 @@ h1{
   padding: 12px 0px 0px 14px;
   width: 175px; 
   font-size: var(--dci-text-s);
+
 }
 .textcp {
   width: 130px;
@@ -117,7 +126,7 @@ h1{
   color: #4e5775;
 }
 .buscador{
-  width: 50%;
+  width: 40%;
   display: flex;
 }
 .form-search{
@@ -156,6 +165,7 @@ button, imput{
 .micuenta, .seguimiento, .carrito{
   padding: var(--dci-padding-m);
 }
+
 .micuenta a, .seguimiento a, .carrito a{
   color: #4e5775;
   font-size: var(--dci-text-s);
@@ -171,15 +181,23 @@ button, imput{
   align-items: end;
   margin-left: auto;
 }
+
 .secondbar{
   height: 50px;
   width: 100%;
   border: 2px solid #eaf1f2;
   display: flex;
+
+}
+.menu-blue{
+  display: none;
 }
 .menu-white{
   background-color: var(--dci-darckblue);
   width: 250px;
+}
+.menu-white:hover{
+  background-color: #e2271d;
 }
 .btn{
   gap: 10px;
@@ -187,6 +205,7 @@ button, imput{
   display: flex;
   align-items: center;
   justify-content: center;
+
   cursor: pointer;
   font-size: var(--dci-text-m);
   font-weight: bold;
@@ -205,6 +224,12 @@ button, imput{
 .list li{
   border: 1px solid #eaf1f2;
 }
+.list li:hover{
+  text-decoration: underline;
+  color: #0060a7;
+}
+
+
 li{
   padding: 12px 10px 12px 10px;
   cursor: pointer;
@@ -218,12 +243,17 @@ li{
   display: flex;
   width: 100%;
   overflow: hidden;
+  flex-wrap: wrap;
 }
 .imgleft{
+  min-width: 380px;
+  width: 50%;
   float: left;
   padding: 20px 5px 20px 0px;
 }
 .imgright{
+  min-width: 380px;
+  width: 50%;
   float: right;
   padding: 20px 0px 20px 5px;
 }
@@ -247,32 +277,35 @@ li{
   position: absolute;
   top: 0;
   bottom: 0;
-  margin: auto;  
+  margin: auto;
+  
 }
 #namestore{
   margin-bottom: 10px;
   font-weight: 800;
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 20px;
   float: right;
 }
 .infosev{
   display: flex;
-  width: calc(100% - 360px); 
+  width: 75%; 
   color: #ffffff;
   padding: 15px 20px;
   flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: column;
+
 }
 .line1{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 16px;
 }
 .title{
-  text-transform: uppercase;
   margin-bottom: 10px;
-  width: auto;
-  float: left;
+  width: 312px;
   font-weight: 400;
   font-size: 20px;
 }
@@ -294,6 +327,7 @@ li{
 .infoaddress{
   float: left;
   margin-top: 20px;
+
 }
 #address{
   text-align: left;
@@ -382,10 +416,13 @@ li{
 }
 .imagen{
   display: flex;
+
+
 }
 .flex-cont{
   display: flex;
   flex-direction: column;
+
 }
 h2{
   font-style: normal;
@@ -489,12 +526,11 @@ li a img{
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 footer{
   width: 100%;
-  height:500px;
-  box-shadow: none;
   background: #ffffff;
   font-size: 0;
   padding: 0;
@@ -502,23 +538,28 @@ footer{
   float: left;
   border-top: 10px solid #eff0f4;
 
-} .foot{
-  width: 80%;
-  height: 400px;
+}
+ .foot{
+  width: 90%;
   display: flex;
   margin: auto;
   flex-wrap: wrap;
 }
 .uno{
-  padding: 0px 15px 0px 15px; 
+  min-width: 320.40px;
+  padding: 15px 15px 0px 15px; 
   width: 33.33%;
 }
 .dos{
-  padding: 0px 15px 0px 15px; 
+  min-width: 320.40px;
+  padding: 15px 15px 0px 15px; 
   width: 33.33%;
 }
 .tres{
-  background-color: #f21010a8;
+  min-width: 320.40px;
+  padding: 15px 15px 0px 15px; 
+  display: flex;
+  flex-direction: column;
   width: 33.33%;
 }
 .uno p{
@@ -546,6 +587,7 @@ footer{
   padding-bottom: 10px;
   display: block;
   color: #0060a7;
+
 }
 .enlaces  p{
   margin-top: 25px;
@@ -560,4 +602,182 @@ footer{
   padding-bottom: 10px;
   display: block;
   color: #0060a7;
+}
+.news{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0px 10px 0 10px;
+}
+.tres label{
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #1b2031;
+}
+.boletin{
+  padding-bottom: 15px;
+}
+#email{
+  height: 50px;
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border: 0px;
+  background-color: #eaf1f2;
+  border-radius: 100px;
+}
+.btn2{
+  border: none;
+  background: #e2271d;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 70%;
+  margin-top: -53px;
+  border-radius: 100px;
+  height: 52px;
+}
+.news p{
+  line-height: 18px;
+  font-size: 12px;
+  display: inline-block;
+  color: #505050;
+  margin-top: 12px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+
+}
+.check{
+  position: relative;
+  text-align: left;
+}
+.check input{
+  position: relative;
+  width: 25px;
+  height: 25px;
+  left: 0px;
+  top: 8px;
+  margin: 0px;
+}
+.condiciones{
+  line-height: 20px;
+  margin: 5px 0 0 10px;
+  color: #1b2031;
+  padding: 0;
+}
+.condiciones a{
+  text-decoration: underline;
+  color: #0060a7;
+}
+.copyright{
+  height:50px;
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 15px;
+  background-color: #1b2031;
+
+}
+
+@media (max-width: 760px){
+  #twoelement{
+    justify-content: center;
+  }
+  .imgleft, .imgright{
+    width: 100%;
+    padding: 10px;
+  }
+
+
+}
+@media (max-width:950px){
+  
+  #namestore{
+    margin-bottom: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 15px;
+    float: left;
+    margin-left: 30px;
+  }
+}
+@media (max-width:910px){
+  #boton{
+    position: relative;
+    background-color: #ffffff;
+    font-size: 12px;
+    left: 0%;
+    cursor: pointer;
+    float: right;
+    padding: 10px 30px 10px 60px;
+    border-radius: 100px;
+    margin-top: 15px;
+  }
+  #boton::before{
+    content: "";
+    background-image: url(https://www.tien21.es/estaticos/images/Tien21/howtoarrive.svg);
+    background-repeat: no-repeat;
+    height: 30px;
+    position: absolute;
+    width: 25px;
+    margin-left: -45px;
+    margin-top: -5px;
+  }
+}
+@media (max-width: 1090px) {
+  .buscador {
+    order: 1;
+    margin-bottom: 10px;
+    width: 95%;
+    display: flex;
+  }
+  .menu-white{
+    display: none;
+  }
+  
+  .menu-blue{
+    display: block;
+    position: absolute;
+    padding: 15px;
+    top: 15px;
+  }
+  .btnblue{
+    height: 35px;
+    width: 35px;
+  }
+  .logo{
+    width: 250px;
+  }
+  .logo1{
+    width: 80%;
+    float: right;
+  }
+  .secondbar{
+    float: left;
+  }
+  .list{
+    margin-left: 0;
+  }
+}
+@media (max-width: 1200px){
+  .foot{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .uno{
+    text-align: center;
+  }
+  .dos{
+    text-align: center;
+  }
+  .tres{
+    text-align: center;
+  }
 }
